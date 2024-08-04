@@ -1,20 +1,18 @@
-import React from 'react';
-import { Container, Typography, Button, List, ListItem, ListItemText } from '@mui/material';
+import React, { useContext } from 'react';
+import { Container, Button, List, ListItem, ListItemText, IconButton, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
+import DeleteIcon from '@mui/icons-material/Delete';
+import PageTitle from '../components/PageTitle';
 
 function CartPage() {
-  const cartItems = [
-    { id: 1, name: 'Product 1', price: 10.0 },
-    { id: 2, name: 'Product 2', price: 20.0 }
-  ];
+  const { cartItems, removeFromCart } = useContext(CartContext);
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
     <Container>
-      <Typography variant="h3" component="h1" gutterBottom>
-        Cart Page
-      </Typography>
+      <PageTitle title="Cart" />
       <List>
         {cartItems.map(item => (
           <ListItem key={item.id}>
@@ -22,6 +20,9 @@ function CartPage() {
               primary={item.name}
               secondary={`$${item.price}`}
             />
+            <IconButton edge="end" aria-label="delete" onClick={() => removeFromCart(item.id)}>
+              <DeleteIcon />
+            </IconButton>
           </ListItem>
         ))}
       </List>

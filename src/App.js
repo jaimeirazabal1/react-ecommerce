@@ -5,6 +5,7 @@ import ProductPage from './pages/ProductPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import ConfirmationPage from './pages/ConfirmationPage';
+import LoginPage from './pages/LoginPage';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/confirmation" element={<ConfirmationPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );

@@ -1,73 +1,18 @@
 export const products = [
-    {
-      id: 1,
-      name: 'Product 1',
-      description: 'Description for product 1',
-      price: 10.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 2,
-      name: 'Product 2',
-      description: 'Description for product 2',
-      price: 20.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 3,
-      name: 'Product 3',
-      description: 'Description for product 3',
-      price: 30.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 4,
-      name: 'Product 4',
-      description: 'Description for product 4',
-      price: 40.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 5,
-      name: 'Product 5',
-      description: 'Description for product 5',
-      price: 50.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 6,
-      name: 'Product 6',
-      description: 'Description for product 6',
-      price: 60.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 7,
-      name: 'Product 7',
-      description: 'Description for product 7',
-      price: 70.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 8,
-      name: 'Product 8',
-      description: 'Description for product 8',
-      price: 80.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 9,
-      name: 'Product 9',
-      description: 'Description for product 9',
-      price: 90.0,
-      image: 'https://via.placeholder.com/150'
-    },
-    {
-      id: 10,
-      name: 'Product 10',
-      description: 'Description for product 10',
-      price: 100.0,
-      image: 'https://via.placeholder.com/150'
-    }
+    { id: 1, name: 'Apple iPhone 13', description: 'Experience the latest in technology with the new iPhone 13.', price: 999.0, category: 'Electronics', createdAt: '2024-01-15', image: 'https://via.placeholder.com/300x200.png?text=Apple+iPhone+13' },
+    { id: 2, name: 'Samsung Galaxy S21', description: 'The new Samsung Galaxy S21, the ultimate Android experience.', price: 799.0, category: 'Electronics', createdAt: '2024-02-20', image: 'https://via.placeholder.com/300x200.png?text=Samsung+Galaxy+S21' },
+    { id: 3, name: 'Sony WH-1000XM4', description: 'Industry-leading noise canceling with Dual Noise Sensor technology.', price: 349.0, category: 'Audio', createdAt: '2023-12-10', image: 'https://via.placeholder.com/300x200.png?text=Sony+WH-1000XM4' },
+    { id: 4, name: 'Dell XPS 13', description: 'Compact 13-inch laptop with a stunning InfinityEdge display.', price: 1099.0, category: 'Computers', createdAt: '2024-03-05', image: 'https://via.placeholder.com/300x200.png?text=Dell+XPS+13' },
+    { id: 5, name: 'Apple MacBook Pro', description: 'The new MacBook Pro delivers game-changing performance for pro users.', price: 1299.0, category: 'Computers', createdAt: '2024-01-25', image: 'https://via.placeholder.com/300x200.png?text=Apple+MacBook+Pro' },
+    { id: 6, name: 'Google Pixel 6', description: 'The Google Pixel 6 offers an exceptional Android experience with Google\'s latest software.', price: 699.0, category: 'Electronics', createdAt: '2024-01-18', image: 'https://via.placeholder.com/300x200.png?text=Google+Pixel+6' },
+    { id: 7, name: 'Bose QuietComfort 35 II', description: 'High-quality noise canceling headphones with superior sound.', price: 299.0, category: 'Audio', createdAt: '2023-12-25', image: 'https://via.placeholder.com/300x200.png?text=Bose+QuietComfort+35+II' },
+    { id: 8, name: 'Microsoft Surface Pro 7', description: 'Versatile 2-in-1 laptop with a detachable keyboard and high-resolution touch screen.', price: 899.0, category: 'Computers', createdAt: '2024-02-10', image: 'https://via.placeholder.com/300x200.png?text=Microsoft+Surface+Pro+7' },
+    { id: 9, name: 'Canon EOS R5', description: 'High-end mirrorless camera with 45MP sensor and 8K video recording.', price: 3899.0, category: 'Cameras', createdAt: '2024-01-05', image: 'https://via.placeholder.com/300x200.png?text=Canon+EOS+R5' },
+    { id: 10, name: 'Sony A7 III', description: 'Full-frame mirrorless camera with 24MP sensor and advanced autofocus.', price: 1999.0, category: 'Cameras', createdAt: '2024-02-01', image: 'https://via.placeholder.com/300x200.png?text=Sony+A7+III' },
+    { id: 11, name: 'Apple Watch Series 7', description: 'Advanced smartwatch with health tracking and cellular connectivity.', price: 399.0, category: 'Wearables', createdAt: '2024-02-15', image: 'https://via.placeholder.com/300x200.png?text=Apple+Watch+Series+7' },
+    { id: 12, name: 'Fitbit Charge 5', description: 'Fitness tracker with built-in GPS and advanced health metrics.', price: 179.0, category: 'Wearables', createdAt: '2024-01-20', image: 'https://via.placeholder.com/300x200.png?text=Fitbit+Charge+5' },
+    { id: 13, name: 'DJI Mavic Air 2', description: 'Compact drone with 4K camera and advanced flight features.', price: 799.0, category: 'Drones', createdAt: '2023-12-30', image: 'https://via.placeholder.com/300x200.png?text=DJI+Mavic+Air+2' },
+    { id: 14, name: 'GoPro HERO9 Black', description: 'Rugged action camera with 5K video recording and front-facing screen.', price: 499.0, category: 'Cameras', createdAt: '2024-01-10', image: 'https://via.placeholder.com/300x200.png?text=GoPro+HERO9+Black' },
+    { id: 15, name: 'Kindle Paperwhite', description: 'E-reader with high-resolution display and adjustable front light.', price: 129.0, category: 'Electronics', createdAt: '2024-02-05', image: 'https://via.placeholder.com/300x200.png?text=Kindle+Paperwhite' }
   ];
   
