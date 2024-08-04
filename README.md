@@ -1,112 +1,102 @@
 
-# Ecommerce React App
+```markdown
+# TechStore
 
-Esta es una aplicación de ecommerce básica creada con React y Material-UI. Incluye una barra de navegación, lista de productos, carrito de compras, formulario de pago y página de confirmación de pedido.
+TechStore es un proyecto de ecommerce desarrollado con React y Material-UI. Este proyecto incluye una variedad de características para ofrecer una experiencia de compra completa y profesional.
 
 ## Características
 
-- **Barra de Navegación**: Navegación fácil entre la página principal y el carrito de compras.
-- **Lista de Productos**: Visualización de productos con imágenes, descripciones y precios.
-- **Carrito de Compras**: Visualización y cálculo del total de los productos añadidos al carrito.
-- **Formulario de Pago**: Recoge la información del cliente para procesar el pago.
-- **Página de Confirmación de Pedido**: Confirmación de la compra realizada.
+- **Autenticación y Registro de Usuarios**: Permite a los usuarios registrarse e iniciar sesión.
+- **Carrito Persistente**: Los elementos en el carrito se mantienen persistentes entre sesiones del navegador.
+- **Página de Detalles del Producto**: Incluye reseñas de usuarios y recomendaciones de productos similares.
+- **Sistema de Reseñas y Calificaciones**: Permite a los usuarios dejar reseñas y calificaciones de productos.
+- **Sistema de Pago Seguro**: Simulación de pago con un formulario de tarjeta de crédito.
+- **Notificaciones por Correo Electrónico**: Simulación del envío de correos electrónicos de confirmación de pedido.
+- **SEO y Analítica**: Mejora del SEO con etiquetas meta y configuración de Google Analytics.
+- **Responsive Design**: Diseño completamente responsivo utilizando Material-UI.
 
 ## Tecnologías Utilizadas
 
-- React
-- Material-UI
-- React Router
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Material-UI**: Biblioteca de componentes de React para un diseño consistente y responsivo.
+- **React Router**: Manejo de rutas en la aplicación.
+- **React Helmet**: Manejo de etiquetas meta para SEO.
+- **Google Analytics**: Herramienta para el análisis del tráfico web.
 
 ## Instalación
 
 1. Clona el repositorio:
-
-```
-git clone https://github.com/jaimeirazabal1/react-ecommerce.git
-```
-
+   ```bash
+   git clone https://github.com/tu-usuario/techstore.git
+   ```
 2. Navega al directorio del proyecto:
-
-```
-cd ecommerce-react-app
-```
-
+   ```bash
+   cd techstore
+   ```
 3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-```
-npm install
-```
+## Uso
 
-4. Instala los íconos de Material-UI:
-
-```
-npm install @mui/icons-material
-```
-
-5. Inicia la aplicación:
-
-```
-npm start
-```
+1. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
+2. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
 ## Estructura del Proyecto
 
-```
-ecommerce-react-app/
-├── public/
-├── src/
-│   ├── components/
+```plaintext
+├── public
+│   └── index.html
+├── src
+│   ├── components
 │   │   ├── Navbar.js
-│   │   ├── ProductList.js
-│   ├── data/
-│   │   └── products.js
-│   ├── pages/
+│   │   ├── PageTitle.js
+│   │   ├── ProductFilter.js
+│   │   └── ProductList.js
+│   ├── context
+│   │   ├── AuthContext.js
+│   │   └── CartContext.js
+│   ├── data
+│   │   ├── products.js
+│   │   └── reviews.js
+│   ├── pages
 │   │   ├── CartPage.js
 │   │   ├── CheckoutPage.js
 │   │   ├── ConfirmationPage.js
 │   │   ├── HomePage.js
-│   │   ├── ProductPage.js
+│   │   ├── LoginPage.js
+│   │   └── ProductPage.js
 │   ├── App.js
-│   ├── index.css
 │   ├── index.js
-├── package.json
-└── README.md
+│   └── constants.js
+└── package.json
 ```
 
-## Descripción de los Componentes
+## Descripción de Componentes
 
-### Navbar.js
-
-Barra de navegación que incluye enlaces a la página principal y al carrito de compras.
-
-### ProductList.js
-
-Lista de productos que muestra cada producto con su imagen, descripción y precio.
-
-### CartPage.js
-
-Página del carrito de compras que muestra los productos añadidos al carrito y el total de la compra.
-
-### CheckoutPage.js
-
-Formulario de pago que recoge la información del cliente.
-
-### ConfirmationPage.js
-
-Página de confirmación de pedido que confirma al usuario que su compra ha sido realizada con éxito.
-
-### HomePage.js
-
-Página principal que da la bienvenida a los usuarios a la tienda y muestra la lista de productos.
-
-### ProductPage.js
-
-Página de detalles del producto que muestra la información específica de un producto seleccionado.
+- **Navbar**: Barra de navegación principal.
+- **PageTitle**: Componente para manejar el título de la página y las etiquetas meta.
+- **ProductFilter**: Filtros para buscar y ordenar productos.
+- **ProductList**: Lista de productos mostrados en la página principal.
+- **AuthContext**: Contexto para manejar la autenticación de usuarios.
+- **CartContext**: Contexto para manejar el estado del carrito de compras.
+- **HomePage**: Página principal con la lista de productos y filtros.
+- **ProductPage**: Página de detalles del producto con reseñas y recomendaciones.
+- **CartPage**: Página del carrito de compras.
+- **CheckoutPage**: Página de pago.
+- **ConfirmationPage**: Página de confirmación del pedido.
+- **LoginPage**: Página de inicio de sesión.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras algún problema, por favor abre un issue o envía un pull request.
+Las contribuciones son bienvenidas. Por favor, crea un issue para discutir los cambios que deseas realizar.
 
 ## Licencia
 
-Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+```
+

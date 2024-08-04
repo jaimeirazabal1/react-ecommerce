@@ -53,7 +53,7 @@ function HomePage() {
 
   return (
     <Container>
-      <PageTitle title={`Welcome to ${STORE_NAME}`} />
+      <PageTitle title={`Welcome to ${STORE_NAME}`} description="Discover the best products at TechStore. From the latest gadgets to the most innovative electronics, find everything you need in one place." />
       <ProductFilter categories={categories} onFilter={handleFilter} />
       <ProductList products={displayedProducts} />
       <Pagination

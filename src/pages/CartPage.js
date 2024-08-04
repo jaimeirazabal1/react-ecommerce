@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Container, Button, List, ListItem, ListItemText, IconButton, Typography } from '@mui/material';
+import { Container, Typography, Button, List, ListItem, ListItemText, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -27,7 +27,7 @@ function CartPage() {
         ))}
       </List>
       <Typography variant="h6" component="p">
-        Total: ${totalPrice}
+        Total: ${totalPrice.toFixed(2)}
       </Typography>
       <Button variant="contained" color="primary" style={{ marginTop: '1rem' }} component={Link} to="/checkout">
         Proceed to Checkout
