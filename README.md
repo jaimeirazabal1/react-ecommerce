@@ -1,5 +1,3 @@
-
-```markdown
 # TechStore
 
 TechStore es un proyecto de ecommerce desarrollado con React y Material-UI. Este proyecto incluye una variedad de características para ofrecer una experiencia de compra completa y profesional.
@@ -97,6 +95,5 @@ Las contribuciones son bienvenidas. Por favor, crea un issue para discutir los c
 
 ## Licencia
 
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
-```
+Este proyecto está licenciado bajo la [MIT License]
 
