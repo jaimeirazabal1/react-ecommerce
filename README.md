@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+Entiendo, mantendré el texto en formato plano para que se vea correctamente. Aquí tienes el contenido del `README.md` sin perder el formato:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ecommerce React App
 
-## Available Scripts
+Esta es una aplicación de ecommerce básica creada con React y Material-UI. Incluye una barra de navegación, lista de productos, carrito de compras, formulario de pago y página de confirmación de pedido.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- **Barra de Navegación**: Navegación fácil entre la página principal y el carrito de compras.
+- **Lista de Productos**: Visualización de productos con imágenes, descripciones y precios.
+- **Carrito de Compras**: Visualización y cálculo del total de los productos añadidos al carrito.
+- **Formulario de Pago**: Recoge la información del cliente para procesar el pago.
+- **Página de Confirmación de Pedido**: Confirmación de la compra realizada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Material-UI
+- React Router
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clona el repositorio:
 
-### `npm run build`
+```
+git clone https://github.com/jaimeirazabal1/react-ecommerce.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navega al directorio del proyecto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd ecommerce-react-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Instala las dependencias:
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Instala los íconos de Material-UI:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install @mui/icons-material
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Inicia la aplicación:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+## Estructura del Proyecto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+ecommerce-react-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── ProductList.js
+│   ├── data/
+│   │   └── products.js
+│   ├── pages/
+│   │   ├── CartPage.js
+│   │   ├── CheckoutPage.js
+│   │   ├── ConfirmationPage.js
+│   │   ├── HomePage.js
+│   │   ├── ProductPage.js
+│   ├── App.js
+│   ├── index.css
+│   ├── index.js
+├── package.json
+└── README.md
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Descripción de los Componentes
 
-### Code Splitting
+### Navbar.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Barra de navegación que incluye enlaces a la página principal y al carrito de compras.
 
-### Analyzing the Bundle Size
+### ProductList.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Lista de productos que muestra cada producto con su imagen, descripción y precio.
 
-### Making a Progressive Web App
+### CartPage.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Página del carrito de compras que muestra los productos añadidos al carrito y el total de la compra.
 
-### Advanced Configuration
+### CheckoutPage.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Formulario de pago que recoge la información del cliente.
 
-### Deployment
+### ConfirmationPage.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Página de confirmación de pedido que confirma al usuario que su compra ha sido realizada con éxito.
 
-### `npm run build` fails to minify
+### HomePage.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Página principal que da la bienvenida a los usuarios a la tienda y muestra la lista de productos.
+
+### ProductPage.js
+
+Página de detalles del producto que muestra la información específica de un producto seleccionado.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras algún problema, por favor abre un issue o envía un pull request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
