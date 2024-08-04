@@ -1,4 +1,3 @@
-Entiendo, mantendré el texto en formato plano para que se vea correctamente. Aquí tienes el contenido del `README.md` sin perder el formato:
 
 # Ecommerce React App
 
