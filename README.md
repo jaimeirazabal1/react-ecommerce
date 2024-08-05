@@ -29,7 +29,7 @@ TechStore es un proyecto de ecommerce desarrollado con React y Material-UI. Este
    ```
 2. Navega al directorio del proyecto:
    ```bash
-   cd techstore
+   cd react-ecommerce
    ```
 3. Instala las dependencias:
    ```bash
