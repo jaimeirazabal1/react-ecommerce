@@ -25,7 +25,7 @@ TechStore es un proyecto de ecommerce desarrollado con React y Material-UI. Este
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/techstore.git
+   git clone https://github.com/jaimeirazabal1/react-ecommerce
    ```
 2. Navega al directorio del proyecto:
    ```bash
